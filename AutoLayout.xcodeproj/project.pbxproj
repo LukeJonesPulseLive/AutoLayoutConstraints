@@ -14,7 +14,7 @@
 		BAEA991E20481003004815F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEA991C20481003004815F0 /* LaunchScreen.storyboard */; };
 		BAEA992920481003004815F0 /* AutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA992820481003004815F0 /* AutoLayoutTests.swift */; };
 		BAEA993420481003004815F0 /* AutoLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA993320481003004815F0 /* AutoLayoutUITests.swift */; };
-		BAEA99422048103B004815F0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA99412048103B004815F0 /* File.swift */; };
+		BAEA99422048103B004815F0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA99412048103B004815F0 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		BAEA992F20481003004815F0 /* AutoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEA993320481003004815F0 /* AutoLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutUITests.swift; sourceTree = "<group>"; };
 		BAEA993520481003004815F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAEA99412048103B004815F0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BAEA99412048103B004815F0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				BAEA991320481003004815F0 /* AppDelegate.swift */,
 				BAEA991520481003004815F0 /* ViewController.swift */,
-				BAEA99412048103B004815F0 /* File.swift */,
+				BAEA99412048103B004815F0 /* UIView+Extensions.swift */,
 				BAEA991720481003004815F0 /* Main.storyboard */,
 				BAEA991A20481003004815F0 /* Assets.xcassets */,
 				BAEA991C20481003004815F0 /* LaunchScreen.storyboard */,
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEA991620481003004815F0 /* ViewController.swift in Sources */,
-				BAEA99422048103B004815F0 /* File.swift in Sources */,
+				BAEA99422048103B004815F0 /* UIView+Extensions.swift in Sources */,
 				BAEA991420481003004815F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
