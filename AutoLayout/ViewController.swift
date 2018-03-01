@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var anotherViewTopAnchor: NSLayoutConstraint?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,16 @@ class ViewController: UIViewController {
         let anotherView = UIView()
         view.addSubview(anotherView)
         anotherView.backgroundColor = .blue
-        anotherView.anchor(top: someView.topAnchor, left: someView.leftAnchor, topConstant: 50, leftConstant: 20, widthConstant: 50, heightConstant: 50)
+        let anotherViewConstraints = anotherView.anchorWithReturnAnchors(top: someView.topAnchor, left: someView.leftAnchor, topConstant: 50, leftConstant: 20, widthConstant: 50, heightConstant: 50)
+        self.anotherViewTopAnchor = anotherViewConstraints[.top]
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIView.animate(withDuration: 5) { [weak self] in
+            self?.anotherViewTopAnchor?.constant = 200
+            self?.view.layoutIfNeeded()
+        }
     }
 }
 
